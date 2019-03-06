@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mallorca: weather</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="D3/d3.js"></script>
+  </head>
+  <body>
+    <div class="nav">
+  	  <ul id="nav-options">
+  		<li><a href="weather.html">Weather</a></li>
+  		<li><a href="#">Things to do</a>   
+          <div class="things-dropdown-content">
+            <a href="#">Nature & parks</a>
+		    <a href="#">Sightseeing</a>
+		    <a href="#">Tours</a>
+		    <a href="#">Hotels</a>
+          </div>
+        </li>  
+  		<li><a href="index.html">Introduction</a></li>
+        <a href="index.html"><img id="nav-picture" src="Assets/Images/mallorca-flag.gif" alt="flag of mallorca"></a>
+  	  </ul>
+  	</div>
+  	<img id="weather-header" src="Assets/Images/weather-header.jpg" alt="luxurious apartment on the coast of Mallorca">
+  	<a class="weatherwidget-io" href="https://forecast7.com/en/39d572d65/palma/" data-label_1="MALLORCA" data-label_2="Weather" data-icons="Climacons Animated" data-theme="clear" data-basecolor="rgba(245, 245, 245, 0.92)" >MALLORCA Weather</a>
+	<script>
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+	</script>
+  	<div class="content-container">
+  	  <h1 id="content-header">About the weather<h1>
+  	  <hr style="max-width: 80%">
+	  <p>
+	  Mallorca experiences great Mediterranean weather with temperatures much more pleasant that that of continental Europe.  The Mallorca travel guide explains that summers in Majorca (Mallorca) are normally hot and dry while winters tend to be pleasant and mild. The Island of Majorca is large and covered with mountains. The Southeast sheltered part of the island is warmer than the northwest. Coastal cities receive 300 days of sunshine annually.</p>
+
+	  <h2 class="weather-h2">Summer in Mallorca:</h2>
+	  <p>Summer in Mallorca (Majorca) starts at the beginning of June and brings plenty of sun with temperature between 27 degrees and 30 degrees or even more in July and August. Mallorca is the ideal travel destination for vacationers looking for sun.  The cooling breeze makes the hot temperature more comfortable.</p>
+
+	  <h2 class="weather-h2">Autumn in Mallorca:</h2>
+	  <p>Autumn brings rain but the weather is still generally sunny and nice.  The Mallorca travel guide explains that visiting in October is a good idea for travelers who prefer to avoid crowds and pay low hotel rates and discounted Mallorca Spain vacation villas. The weather is a solid 23-25 degrees Celsius during the day; nights can get down to 10 degrees. Novembers in Mallorca still offer pleasant temperatures of 18 degrees during the day and 6 degrees at night.</p>
+
+	  <h2 class="weather-h2">Winter in Mallorca:</h2>
+	  <p>The mild winters in Mallorca have an average temperature of 14 degrees during the day and 4 degrees at night. Winter in Mallorca best suits travelers looking to relax and/or explore a great island but note that many restaurants and bars will be closed.</p>
+
+	  <h2 class="weather-h2">Spring in Mallorca:</h2>
+	  <p>Between March and May the temperature gets back to 18 to 20 degrees. Nights may still get cold during spring in Mallorca and spring season is generally too cold for swimming in the ocean.</p>
+
+	  <p>Mallorca is a year-round great holiday destination with great weather. The surround ocean deters extreme weather.</p>
+
+	  <p>Majorca's high tourist season begins in April and ends around late September. The hot summers bring tourists by storms to sun bathe, swim, and be a part of the bustling nightlife. nightclubs throw their most extensive parties over the summer months, brining in famous DJs, entertainers, and running specials. Some places are only open in summer: June through September.</p>
+
+	  <p>The summer is also when the majority of festivals take place such as the following:</p>
+	  <ul class="weather-ul">
+	    <li>Festival Islanencanta is held annually in July. The name means "the island that sings" and this is a true music festival focusing on DJs</li>
+	    <li>Waiting for Waits is also an annual festival in July. A different type of music is honored for this party. Country music is the theme and the festival honors artist, Tom Waits.</li>
+	    <li>Fonart Short Film Festival runs from August through September and has movie screenings throughout the capital city of Palma.</li>
+	  </ul>
+	  <p>Although summer is clearly the traditional time to visit Majorca, winter is becoming increasingly more popular. The sunny days are still there in winter although temperatures fall just short of comfortable swimming weather. Christmas is one reason some come to Majorca in off-season but in general the winter trend is taking off.</p>
+
+	  <p>For a comprehensive month-by-month guide to the weather in Mallorca, see <a href="http://www.climateandweather.com/weather-in-mallorca" target="_blank">climateandweather.com</a>.</p>
+ 		<div id="temperature-container">
+ 		  <h2 id="temperature-header">Average temperature</h2>
+		  <svg id="svg" width="700" height="500"></svg>
+		  <script type="text/javascript" src="weather-graph-scripts.js"></script>
+		  <table class="high-low-table">
+		    <tbody>
+		      <tr class="table-header">
+		      	<th>   </th>
+		      	<th>Jan</th>
+		      	<th>Feb</th>
+		      	<th>Mar</th>
+		      	<th>Apr</th>
+		      	<th>May</th>
+		      	<th>Jun</th>
+		      	<th>Jul</th>
+		      	<th>Aug</th>
+		      	<th>Sep</th>
+		      	<th>Oct</th>
+		      	<th>Nov</th>
+		      	<th>Dec</th>
+		      </tr>
+		      <tr class="table-high-temp">
+		        <td>High °C</td>
+		        <td>15</td>
+		        <td>16</td>
+		        <td>17</td>
+		        <td>19</td>
+		        <td>23</td>
+		        <td>27</td>
+		        <td>29</td>
+		        <td>30</td>
+		        <td>27</td>
+		        <td>24</td>
+		        <td>19</td>
+		        <td>17</td>
+		      </tr>
+		      <tr class="table-low-temp">
+		      	<td>Low °C</td>
+		      	<td>8</td>
+		      	<td>8</td>
+		      	<td>10</td>
+		      	<td>12</td>
+		      	<td>15</td>
+		      	<td>19</td>
+		      	<td>22</td>
+		      	<td>23</td>
+		      	<td>20</td>
+		      	<td>17</td>
+		      	<td>12</td>
+		      	<td>10</td>
+		      </tr>
+		    </tbody>
+		  </table>
+		</div>
+  </body>
+</html>

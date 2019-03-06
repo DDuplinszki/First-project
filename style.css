@@ -1,0 +1,285 @@
+/*****************
+	index.html
+*****************/
+#welcome {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	background: rgba(255, 255, 255, 0.7);
+	padding-top: 11px;
+	padding-bottom: 11px;
+	animation-name: fade-in;
+	animation-duration: 1.5s;
+	z-index: 1;
+}
+.nav {
+	width: 100%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	text-align: center;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	z-index: 2;
+}
+#nav-options {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	margin-right: 298px;
+}
+#nav-options li {
+	display: block;
+	text-align: center;
+	float: right;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 14px;
+	text-decoration: none;
+	border-left: 5px solid rgba(0, 128, 255, 0.5);
+}
+#nav-options a:visited {
+	color: black;
+}
+#nav-options a {
+	text-decoration: none;
+}
+#nav-options li:nth-child(n+2) {
+	padding-right: 100px;
+}
+#nav-options li:first-child {
+	padding-right: 14px;
+}
+#nav-options li:hover {
+	background-color: rgba(0, 128, 255, 0.5);
+	transition: background-color 0.3s ease-in;
+}
+.things-dropdown-content {
+	opacity: 0;
+	max-height: 0;
+	position: absolute;
+	visibility: hidden;
+	width: 233.75px;
+	height: 196px;
+	background-color: white;
+	margin-left: -14px;
+	margin-top: 16px;
+	box-shadow: 0px 0px 15px rgba(75, 75, 75, 0.5);
+	transition: all 0.25s ease-out;
+}
+.things-dropdown-content a {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 18px;
+	padding: 14px;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+}
+.things-dropdown-content a:visited {
+	color: black;
+}
+.things-dropdown-content a:hover {
+	padding-top: 9px;
+	background-color: rgba(0, 128, 255, 0.5);
+	border-top: 5px solid rgba(0, 128, 255, 0.5);
+	transition: background-color 0.4s ease-out;
+}
+#nav-options li:nth-child(2):hover .things-dropdown-content {
+	visibility: visible;
+	opacity: 1;
+	max-height: 196px;
+	transition: all 0.25s ease-out;
+}
+#nav-picture {
+	float: left;
+	height: 50px;
+	width: auto;
+	margin-left: 283px;
+	padding-top: 3px;
+}
+#header-picture {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 70%;
+	padding-top: 44px;
+	animation-name: fade-in;
+	animation-duration: 1.5s;
+	box-shadow: 0px 0px 15px rgba(75, 75, 75, 0.5);
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.content-container {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 70%;
+	background-color: rgb(247, 247, 247);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 15px rgba(75, 75, 75, 0.5);
+}
+#content-header {
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.content-container p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.content-container img {
+	float: left;
+	width: 40%;
+	height: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#first-picture {
+	padding-top: 12px;
+}
+.content-container iframe {
+	width: 800px;
+	height: 600px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+/*******************
+	weather.html
+*******************/
+#weather-header {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%;
+	padding-top: 44px;
+	animation-name: fade-in;
+	animation-duration: 1.5s;
+	box-shadow: 0px 0px 15px rgba(75, 75, 75, 0.5);
+}
+.weatherwidget-io {
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%;
+	box-shadow: 0px 0px 15px rgba(75, 75, 75, 0.5);
+}
+.weather-h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin-bottom: -15px;
+}
+.weather-ul {
+	font-weight: normal;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 20px;
+}
+#temperature-container {
+	width: 700px;
+	display: block;
+	position: relative;
+	padding: 12px;
+	margin-bottom: 18px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 7px;
+	border: 1px solid rgba(75, 75, 75, 0.5);
+}
+/*TEMPERATURE TABLE*/
+.high-low-table {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.high-low-table td, th {
+	text-align: center;
+	margin: 0;
+	padding: 12px 0;
+	border-right: 1px solid rgb(255, 255, 255);
+	border-bottom: 2px solid rgb(255, 255, 255);
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.table-header {
+	background-color: rgba(173, 215, 165, 0.8);
+}
+.table-high-temp {
+	background-color: rgba(255, 204, 0, 0.8);
+}
+.table-low-temp {
+	background-color: rgba(102, 159, 207, 0.8);
+}
+.table-header th:first-child {
+	background-color: white;
+}
+/*
+not working... 
+.table-header th:last-of-type, .table-high-temp td:last-of-type, .table-low-temp td:last-of-type {
+	border-radius: 0, 7px, 7px, 0;
+	border-right: 0;
+}
+/*TEMPERATURE GRAPH*/
+#temperature-header {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+#svg {
+	background-color: rgb(242, 242, 242);
+	border-radius: 7px;
+	margin-bottom: 18px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.bar:hover {
+	fill: rgb(255, 128, 0);
+}
+.tooltip {
+	position: absolute;
+    text-align: center;
+    width: 80px;
+    height: auto;
+    min-height: 20px;
+    padding: 2px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font: 12px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(100, 161, 209);
+    color: #5E99BD;
+    border-radius: 8px 8px 8px 8px;
+    pointer-events: none;
+    padding: 11px;
+}
+
+.tooltip:before {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 18px;
+    width: 100%;
+    line-height: 1;
+    color: rgb(100, 161, 209);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: -2px;
+}
